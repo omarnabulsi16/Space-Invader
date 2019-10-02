@@ -11,7 +11,7 @@ class ABullet(Sprite):
         super(ABullet, self).__init__()
         self.screen = screen
         self.images = []
-        self.images.append(load_image(r'C:\Users\omarn\Desktop\alienbullet.png'))
+        self.images.append(load_image('images/alienbullet.png'))
         self.rect = self.images[0].get_rect()
         self.rect.centerx = alien.rect.centerx
         self.rect.top = alien.rect.bottom
