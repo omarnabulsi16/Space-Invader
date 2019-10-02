@@ -6,7 +6,7 @@ class Dead(Sprite):
         super(Dead, self).__init__()
         self.screen = screen
         # Load alien image 
-        self.image = pygame.image.load(r'C:\Users\omarn\Desktop\alienexplode.png')
+        self.image = pygame.image.load('images/alienexplode.png')
         self.rect = self.image.get_rect()
         self.rect.center = rect.center
         self.image_speed = 15
