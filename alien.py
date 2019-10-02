@@ -16,18 +16,18 @@ class Alien(Sprite):
         # Load aliens 
         if 0 <= row_number <= 1:
             self.images = []
-            self.images.append(load_image(r'C:\Users\omarn\Desktop\bluealien1.png'))
-            self.images.append(load_image(r'C:\Users\omarn\Desktop\bluealien2.png'))
+            self.images.append(load_image('images/bluealien1.png'))
+            self.images.append(load_image('images/bluealien2.png'))
             self.worth = 10
         elif 2 <= row_number <= 3:
             self.images = []
-            self.images.append(load_image(r'C:\Users\omarn\Desktop\purplealien1.png'))
-            self.images.append(load_image(r'C:\Users\omarn\Desktop\purplealien2.png'))
+            self.images.append(load_image('images/purplealien1.png'))
+            self.images.append(load_image('images/purplealien2.png'))
             self.worth = 20
         elif 4 <= row_number <= 5:
             self.images = []
-            self.images.append(load_image(r'C:\Users\omarn\Desktop\greenalien1.png'))
-            self.images.append(load_image(r'C:\Users\omarn\Desktop\greenalien2.png'))
+            self.images.append(load_image('images/greenalien1.png'))
+            self.images.append(load_image('images/greenalien2.png'))
             self.worth = 40
         if alien_number % 2 == 0:
             self.index = 0
