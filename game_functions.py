@@ -76,8 +76,8 @@ def fire_bullet(ai_settings, screen, ship, bullets, audio):
     if len(bullets) < ai_settings.bullets_allowed and not ship.dead:
         new_bullet = Bullet(ai_settings, screen, ship)
         bullets.add(new_bullet)
-        sound = pygame.mixer.Sound(r'C:\Users\omarn\Desktop\shoot.wav')
-        pygame.mixer.music.load(r'C:\Users\omarn\Desktop\shoot.wav')
+        sound = pygame.mixer.Sound('sounds/shoot.wav')
+        pygame.mixer.music.load('sounds/shoot.wav')
         pygame.mixer.music.play(1, 0.0)
         musicPlaying = True;
 
@@ -234,7 +234,7 @@ def ship_hit(ai_settings, screen, stats, sb, ship, aliens, bullets, abullets, ra
         abullets.empty()
         create_fleet(ai_settings, screen, aliens)
         ship.center_ship()
-        ship.image = pygame.image.load(r'C:\Users\omarn\Desktop\ship.png')
+        ship.image = pygame.image.load('images/ship.png')
         ship.deadc = 10
         ship.dead = False
         ship.image_speed = 1
