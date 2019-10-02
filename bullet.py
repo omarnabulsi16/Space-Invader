@@ -6,7 +6,7 @@ class Bullet(Sprite):
         super(Bullet, self).__init__()
         self.screen = screen
         # Create bullet and set correct position
-        self.image = pygame.image.load(r'C:\Users\omarn\Desktop\playerbullet.png')
+        self.image = pygame.image.load('images/playerbullet.png')
         self.rect = self.image.get_rect()
         self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
